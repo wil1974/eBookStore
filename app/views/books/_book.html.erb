@@ -1,7 +1,8 @@
   <div class="col-md-3">
     <div class="thumbnail">
       <%= link_to book_path(book) do %>
-        <%= image_tag "http://67.media.tumblr.com/770e42e071ff05fcdd6b45168828abe5/tumblr_o8h4xfPMRR1st5lhmo1_1280.jpg", class: "img-responsive" %>
+        <%#= image_tag "http://67.media.tumblr.com/770e42e071ff05fcdd6b45168828abe5/tumblr_o8h4xfPMRR1st5lhmo1_1280.jpg", class: "img-responsive" %>
+        <%= image_tag(book.image.url(:original), class: "img-responsive") if !book.image.blank? %>
       <% end %>
     </div>
 
