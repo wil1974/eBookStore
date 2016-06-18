@@ -1,0 +1,12 @@
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <%= link_to book_path(book) do %>
+        <%= image_tag "http://67.media.tumblr.com/770e42e071ff05fcdd6b45168828abe5/tumblr_o8h4xfPMRR1st5lhmo1_1280.jpg", class: "img-responsive" %>
+      <% end %>
+    </div>
+
+    <div class="caption">
+      <h3><%= link_to book.name, book_path(book) %></h3>
+      <p>$ <%= book.price.to_f / 100 %></p>
+    </div>
+  </div>
