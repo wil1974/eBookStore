@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
 
   #catch exception thrown by cancan
   rescue_from CanCan::AccessDenied do |exception|
-    redirect_to root_path, notice: "You are not authorized to access this area"
+    redirect_to root_path, alert: exception.message
   end
 end

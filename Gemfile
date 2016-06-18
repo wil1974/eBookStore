@@ -81,7 +81,8 @@ gem 'font-awesome-rails'
 # gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
 # gem 'mini_magick'
 # gem 'fog-aws'
-# gem 'figaro'
+#bundle exec figaro install
+gem 'figaro'
 # gem 'bootstrap-will_paginate'
 gem 'devise'
 #https://github.com/herval/yahoo-finance
@@ -95,6 +96,11 @@ gem 'simple_form'
 #https://github.com/CanCanCommunity/cancancan
 #https://www.sitepoint.com/cancancan-rails-authorization-dance/
 gem 'cancancan', '~> 1.10'
+
+#https://github.com/thoughtbot/paperclip
+gem "paperclip"
+gem 'aws-sdk', '< 2.0'
+# gem 'aws-sdk', '>= 2.0.34'
 
 #zdennis/activerecord-import
 #activerecord-import is a library for bulk inserting data using ActiveRecord.
