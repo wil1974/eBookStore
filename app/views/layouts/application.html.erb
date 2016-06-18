@@ -11,9 +11,12 @@
 <%= render 'layouts/navbar' %>
 
 <div class="container">
-  <% flash.each do |key, value| %>
-    <div class="alert alert-<%= key %>">
-      <%= value %>
+ <% flash.each do |type, message| %>
+    <div class="alert <%= bootstrap_flash_class(type) %> fade in">
+      <%= message %>
+      <a class="close" data-dismiss="alert">
+        <i class="glyphicon glyphicon-remove"></i>
+      </a>
     </div>
   <% end %>
 
