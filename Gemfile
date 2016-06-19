@@ -108,6 +108,10 @@ gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.
 #Stripe gem
 gem 'stripe'
 
+#State Machine for tracking transaction
+#https://github.com/aasm/aasm
+gem 'aasm'
+
 #zdennis/activerecord-import
 #activerecord-import is a library for bulk inserting data using ActiveRecord.
 #speed improvement thru reducing SQL statments.
