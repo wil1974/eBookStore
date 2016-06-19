@@ -105,6 +105,8 @@ gem 'aws-sdk', '< 2.0'
 #https://github.com/norman/friendly_id
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 
+#Stripe gem
+gem 'stripe'
 
 #zdennis/activerecord-import
 #activerecord-import is a library for bulk inserting data using ActiveRecord.
